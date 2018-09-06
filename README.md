@@ -31,14 +31,7 @@ $ sudo docker build . -t "<yourname>/osrm-nodejs-machine"
 ## 2 / Lancer le container
 
 ```
-$ sudo docker run -it -p 3000:3000 -v $(pwd)/node-app:/app/  debian-test
-```
-
-## 3 / Démarrer le serveur nodejs
-
-```
-$ nodemon app.js
-
+$ sudo docker run -it -p 3000:3000 <yourname>/osrm-nodejs-machine
 ```
 
 ### / ! \ Nouveau fichier pbf ?
@@ -50,6 +43,7 @@ node_modules/osrm/lib/binding/osrm-extract data.osm.pbf -p node_modules/osrm/pro
 ```
 node_modules/osrm/lib/binding/osrm-contract data.osrm
 ```
+
 
 ### Utilisation
 

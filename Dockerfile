@@ -16,10 +16,8 @@ WORKDIR /app
 
 VOLUME /app/
 
-ADD /node-app/ /app/
-
-RUN npm install
+ADD /osrm-node-server/ /app/
 
 EXPOSE 3000
 
-CMD nodemon app.js
+CMD npm install; nodemon app.js
